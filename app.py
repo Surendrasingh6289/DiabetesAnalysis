@@ -8,7 +8,7 @@ def main():
     st.title("Diabetes Prediction")
     st.header("Machine Learning project",divider='red')
 
-    model = pickle.load("LogisticModel.pkl")
+    model = pickle.load("DiabetesPrediction.pkl")
 
 
     Pregnancy = st.number_input("Pregnancies",min_value=0,max_value=17)
