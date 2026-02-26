@@ -25,7 +25,7 @@ def main():
         new_array = np.array([[Pregnancy,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]])
         prediction = model.predict(new_array)
 
-        if prediction == 0:
+        if prediction[0] == 0:
             st.success("Negative")
         else:
             st.success("Positive")
